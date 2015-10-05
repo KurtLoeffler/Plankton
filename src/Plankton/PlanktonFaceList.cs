@@ -77,10 +77,12 @@ namespace Plankton
                 // Check that all vertex indices exist in this mesh
                 if (i < 0 || i >= vs.Count)
                     throw new IndexOutOfRangeException("No vertex exists at this index.");
+				/*
                 // Check that all vertices are on a boundary
                 int outgoing = vs[i].OutgoingHalfedge;
                 if (outgoing != -1 && hs[outgoing].AdjacentFace != -1)
                     return -1;
+				*/
             }
             
             // For each pair of vertices, check for an existing halfedge
